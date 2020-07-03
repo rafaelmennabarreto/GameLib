@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "noImplicitAny": false,
-    "outDir": "../build",
+    "noImplicitAny": true,
     "sourceMap": true,
+    "outDir": "../build",
     "baseUrl": ".",
     "paths": {
       "*": [

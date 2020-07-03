@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "dev": "concurrently \" yarn dev:react \" \" yarn dev:electron \"",
-    "dev:react": "react-scripts start",
+    "dev:react": "BROWSER=none PUBLIC_URL=./ react-scripts start",
     "dev:electron": "wait-on http-get://localhost:3000 && yarn build:electrondev && cross-env NODE_ENV=development electron ./build/electron.js",
     "start:prod": "yarn build && electron ./build/electron.js",
     "build": "yarn build:react && yarn build:electron",
@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "@types/testing-library__dom": "^7.5.0",
     "concurrently": "^5.2.0",
     "cross-env": "^7.0.2",
     "electron": "^9.0.5",
