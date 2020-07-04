@@ -1,13 +1,11 @@
-import { electron } from "process";
-
-const { dialog } = require('electron');
+import { remote } from 'electron'
 
 declare global {
   interface Window {
-    dialog: Electron.Dialog
+    electronRemote : typeof remote
   }
 }
 
-window.dialog = dialog;
+window.electronRemote = remote
 
-export {};
+export {}

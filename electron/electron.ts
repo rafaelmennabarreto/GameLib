@@ -1,7 +1,7 @@
 import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
 
-function createWindow () {
+function createWindow() {
 
   const win = new BrowserWindow({
     width: 800,
@@ -14,10 +14,11 @@ function createWindow () {
 
   console.log(process.env.NODE_ENV);
 
-  if(process.env.NODE_ENV === "development" )
+  if (process.env.NODE_ENV === 'development'){
     win.loadURL('http://localhost:3000');
-  else
+  }else{
     win.loadFile('index.html')
+  }
 
   win.webContents.openDevTools()
 }

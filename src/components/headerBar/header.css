@@ -1,0 +1,29 @@
+.container{
+  display: flex;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid rgba(255, 0, 0, 0.3); 
+}
+
+.searchbar-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background: white;
+  height: 24px;
+  border-radius: 15px;
+  padding: 0 10px;
+  background: #C4C4C4;
+}
+
+.searchbar-container input {
+  width: 100%;
+  margin-left: 5px;
+  border: none;
+  background: #C4C4C4;
+}
+
+.searchbar-container input:focus{
+  outline-width: 0;
+}

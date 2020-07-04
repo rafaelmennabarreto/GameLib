@@ -1,0 +1,11 @@
+.container-navbaritem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  padding: 10px;
+}
+
+.container-navbaritem span{
+  margin-left: 7px;
+}
